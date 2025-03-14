@@ -1,0 +1,30 @@
+:root {
+  --dark: #1D2120;
+  --dark-alt: #292929;
+  --light: #fff;
+  --gray: #E1DEDF;
+  --red: #f34848;
+
+  --border-1: 1px solid var(--light);
+  --border-2: 1px solid var(--dark);
+  --border-radius: 20px;
+
+  --font-base: "CanelaCondensed", sans-serif;
+  --font-second: "Switzer", sans-serif;
+  --font-other: "SoehneSchmal", sans-serif;
+  --font-other2: "SoehneSchmalHalbfett", sans-serif;
+ 
+
+  --container-width: 1400px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 50px;
+
+  --input-heigth: 60px;
+  --button-heigth: 60px;
+
+  --transition-duration: 0.3s;
+}
+
+
+

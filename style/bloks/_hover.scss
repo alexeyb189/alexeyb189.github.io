@@ -1,0 +1,39 @@
+.hover-item{
+  //  @include hover {
+  //     .focused {
+  //       transform: rotate(0deg) translate3d(0, 0, 0);
+  //       clip-path: polygon(0% -10%, 100% -10%, 100% 110%, 0% 110%);
+  //       transition-delay: .16s !important;
+    
+  //     }
+  
+  //     .unfocused {
+  //       transform: rotate(5deg) translate3d(0, 110%, 0);
+  //       clip-path: polygon(0% -10%, 100% -10%, 100% 110%, 0% 110%);
+  //       transition-delay: .2s !important;
+  //     }
+  //   }
+}
+
+.hover-link{
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+}
+.unfocused{
+  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: rotate(0deg) translate3d(0, 0, 0);
+  transition-delay: 0s !important;
+  display: inline-block;
+}
+.focused{
+  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: rotate(-5deg) translate3d(0, -110%, 0);
+  transition-delay: 0s !important;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f34848;
+  display: inline-block;
+}

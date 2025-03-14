@@ -1,140 +1,1028 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/CustomEase.min.js"></script>
+    <script src="libs/gsap/ScrollSmoother.min.js"></script>
 
+    <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+
+<!-- https://garagemca.org/ -->
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+
+        <div class="header__inner">
+
+          <div class="nav">
+      
+            <div class="nav-menu">
+              <div class="nav-menu-button --open-menu">
+                <div class="nav-menu-button-text"><span>MENU</span></div>
+      
+                <div class="nav-menu-button-circle"></div>
+              </div>
+            </div>
+
+            <a href="/" class="header__logo">
+              <img width="120" height="14" src="img/logo.png" alt="">
+            </a>
+
+            <a href="" class="header__link">
+              <span>Let's Talk</span>
+              </a>
+          </div>
+          
+      
+          <div class="menu">
+            <div class="menu-wrapper container">
+              <div class="menu-overlay">
+                <div class="menu-overlay-inner hover-item" >
+     
+                 <nav class="menu-primary">
+     
+                   <div class="menu-primary-item item">
+     
+                     <a href="" class="menu-item-link item-link">
+     
+                       <span class="menu-item-link-unfocused item-link-unfocused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">  INTEGRATED</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">COMMUNICATIONS</span>
+     
+                       </span>
+     
+     
+                       <span class="menu-item-link-focused item-link-focused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;"> INTEGRATED</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">COMMUNICATIONS</span>
+     
+                       </span>
+     
+                     </a>
+     
+                     <p class="menu-index hover-link">
+                       <span class="menu-index unfocused">
+                         (001)
+                       </span>
+                       <span class="menu-index focused">
+                         (001)
+                       </span>
+     
+                     </p>
+     
+                   </div>
+     
+                   <div class="menu-primary-item item">
+     
+                     <a href="" class="menu-item-link item-link">
+     
+                       <span class="menu-item-link-unfocused item-link-unfocused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">   INFLUENCER</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">MARKETING</span>
+     
+                       </span>
+     
+     
+                       <span class="menu-item-link-focused item-link-focused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">  INFLUENCER</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">MARKETING</span>
+     
+                       </span>
+     
+                     </a>
+     
+                     <p class="menu-index hover-link">
+                       <span class="menu-index unfocused">
+                         (002)
+                       </span>
+                       <span class="menu-index focused">
+                         (002)
+                       </span>
+     
+                     </p>
+     
+                   </div>
+     
+                   <div class="menu-primary-item item">
+     
+                     <a href="" class="menu-item-link item-link">
+     
+                       <span class="menu-item-link-unfocused item-link-unfocused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">PUBLIC</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">RELATIONS</span>
+     
+                       </span>
+     
+     
+                       <span class="menu-item-link-focused item-link-focused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">  PUBLIC</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">RELATIONS</span>
+     
+                       </span>
+     
+                     </a>
+     
+                     <p class="menu-index hover-link">
+                       <span class="menu-index unfocused">
+                         (003)
+                       </span>
+                       <span class="menu-index focused">
+                         (003)
+                       </span>
+     
+                     </p>
+     
+                   </div>
+     
+                   <div class="menu-primary-item item">
+     
+                     <a href="" class="menu-item-link item-link">
+     
+                       <span class="menu-item-link-unfocused item-link-unfocused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">SOCIAL</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">MEDIA</span>
+     
+                       </span>
+     
+     
+                       <span class="menu-item-link-focused item-link-focused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">SOCIAL</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">MEDIA</span>
+     
+                       </span>
+     
+                     </a>
+     
+                     <p class="menu-index hover-link">
+                       <span class="menu-index unfocused">
+                         (004)
+                       </span>
+                       <span class="menu-index focused">
+                         (004)
+                       </span>
+     
+                     </p>
+     
+                   </div>
+     
+                   <div class="menu-primary-item item">
+     
+                     <a href="" class="menu-item-link item-link">
+     
+                       <span class="menu-item-link-unfocused item-link-unfocused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">EVENT PLANNING&</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">PRODUCTION</span>
+     
+                       </span>
+     
+     
+                       <span class="menu-item-link-focused item-link-focused">
+     
+                         <span style="position: relative; display: inline-block; transition-delay: 0s;">EVENT PLANNING&</span>
+     
+                         <span style="position: relative;display: inline-block;transition-delay: 0.02s;">PRODUCTION</span>
+     
+                       </span>
+     
+                     </a>
+     
+                     <p class="menu-index hover-link">
+                       <span class="menu-index unfocused">
+                         (005)
+                       </span>
+                       <span class="menu-index focused">
+                         (005)
+                       </span>
+     
+                     </p>
+     
+                   </div>
+     
+                 </nav>
+     
+     
+                 <div class="menu-footer">
+                   <div class="menu-footer-img">
+                     <div class="menu-footer-img-lazy">
+                       <div class="menu-footer-img-inner">
+                         <img class="menu-img-load" src="img/menu.jpg" alt="">
+                       </div>
+                     </div>
+                   </div>
+     
+                   <div class="menu-footer-bottom">
+                     <div class="menu-footer-links">
+     
+                       <div class="menu-footer-item item">
+     
+                         <a href="" class="menu-footer-link item-link">
+         
+                           <span class="menu-footer-unfocused item-link-unfocused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;">work</span>
+         
+         
+                           </span>
+         
+         
+                           <span class="menu-footer-focused item-link-focused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;">work</span>
+         
+         
+                           </span>
+         
+                         </a>
+         
+                       </div>
+     
+                       <div class="menu-footer-item item">
+     
+                         <a href="" class="menu-footer-link item-link">
+         
+                           <span class="menu-footer-unfocused item-link-unfocused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;"> About us</span>
+         
+         
+                           </span>
+         
+         
+                           <span class="menu-footer-focused item-link-focused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;"> About us</span>
+         
+         
+                           </span>
+         
+                         </a>
+         
+                       </div>
+                      
+                       <div class="menu-footer-item item">
+     
+                         <a href="" class="menu-footer-link item-link">
+         
+                           <span class="menu-footer-unfocused item-link-unfocused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;"> let`s talk</span>
+         
+         
+                           </span>
+         
+         
+                           <span class="menu-footer-focused item-link-focused">
+         
+                             <span style="position: relative; display: inline-block; transition-delay: 0s;"> let`s talk</span>
+         
+         
+                           </span>
+         
+                         </a>
+         
+                       </div>
+     
+                     </div>
+                   </div>
+                 </div>
+     
+                </div>
+     
+     
+               </div>
+     
+                   
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+        <div class="wrapper">
+          <div class="content">
+
+
+            <section class="hero">
+
+              <div class="container">
+                <div class="hero__inner">
+      
+                  <h1 class="hero__heading">
+                    <span class="hero-title">a new celebration</span>
+                    <span class="hero-title">communications agency  </span>
+      
+                  </h1>
+      
+                  <div class="hero__desc">
+      
+                    <div class="hero__desc-left">
+                      <p class="hero__desc-txt">We strategically connect brands with audiences</p>
+                    </div>
+      
+                    <div class="hero__desc-right">
+                      <p class="hero__desc-txt">who provoke, inspire and convert</p>
+                    </div>
+      
+                  </div>
+      
+                </div>
+              </div>
+            </section>
+      
+            <section  class="images-page">
+              <img src="img/hero.jpg" alt="">
+            </section>
+      
+           <section class="about">
+            <div class="container">
+              <div class="about__inner">
+                <div class="about-top">
+                  <p>We narrate the distinctive and captivating stories of some of the world's most desirable brands. Our specialties include public relations, social media management, content creation, and brand partnerships, enabling us to link our clients with leading influencers, media outlets and their target audiences.</p>
+                 
+                  <a href="" class="about__btn btn">
+                    <span class="btn-container">
+                      <span class="btn-inner">
+                        <span class="btn-inactive">About Us</span>
+                        <span class="btn-active">About Us</span>
+                      </span>
+        
+                      <sapn class="btn-black"></sapn>
+                      <sapn class="btn-bg"></sapn>
+                    </span>
+                  </a>
+                </div>
+               
+      
+                <div class="about-gallery">
+      
+                  <div class="about-img about-img-1">
+                    <img  src="img/about-img-1.jpg" alt="">
+                  </div>
+      
+                  <div class="about-img about-img-2">
+                    <img src="img/about-img-2.jpg" alt="">
+                  </div>
+      
+                  <div class="about-img about-img-3">
+                    <img src="img/about-img-3.jpg" alt="">
+                  </div>
+      
+                  <div class="about-img about-img-4">
+                    <img src="img/about-img-4.jpg" alt="">
+                  </div>
+      
+                  <div class="about-img about-img-5">
+                    <img src="img/about-img-5.jpg" alt="">
+                  </div>
+      
+                </div>
+
+                <div class="about-bottom">
+                  <span class="about-number">(01)</span>
+                  <p>Disclaimer: May Cause Brand <br> Awareness
+                  </p>
+                </div>
+              </div>
+            </div>
+           </section>
+
+
+           <section class="poster">
+            <div class="container">
+
+              <div class="poster-img">    
+                <img  src="img/poster-bg.jpg" alt="">
+              </div>
+
+              <div class="poster-grid">
+
+                <div data-speed="1.1" class="poster-grid-title">
+
+                  <div class="poster-item">
+                    <h2>where <br> influence</h2>
+                  </div>
+
+                  <div class="poste2r-item">
+                    <h2>and <br> ipmact</h2>
+                  </div>
+
+                  <div class="poster-item">
+                   <p>We redefine the conventional norms of PR, offering a fresh, forward-thinking perspective as your agency partner</p>
+                  </div>
+
+                  <div class="poster-item">
+                    <p>we envision, craft, and execute groundbreaking communication strategies.</p>
+                   </div>
+
+                   <div class="poster-item">
+                    <h2>intersect</h2>
+                  </div>
+
+                  <div class="poster-item">
+                    <p>We pride ourselves on delivering high-quality, result-driven campaigns that authentically connect with audiences and drive business success.</p>
+                   </div>
+                  
+                </div>
+
+              </div>
+            </div>
+           </section>
+
+          <section class="services">
+
+            <div class="services-number">
+              <span>(02)</span>
+            </div>
+
+            <div class="services-img-second">
+              <img  data-speed=".9" src="img/services-img-second.jpg" alt="">
+            </div>
+
+
+            <div class="services-img">
+              <img src="img/servisec.jpg" alt="">
+            </div>
+            <div class="services-cont">
+             <h4 class="services-subtitle">services</h4>
+
+             <h2 class="services-title">What we do</h2>
+
+             <p class="services-desc">Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.</p>
+            </div>
+           
+          </section>
+
+          <section class="work">
+            <div class="container">
+
+              <div class="work-list">
+
+                <div class="work-item">
+                  <div class="work-bg"></div>
+                  <div class="work-item-inner">
+                    <p class="work-item-subtitle">Service / 001</p>
+                    <p class="work-title">
+                      <span data-reveal="top">INTEGRATED</span>
+                      <span data-reveal="top2">COMMUNICATIONS</span>
+                    </p>
+
+                    <a href="" class="work-item-linkk">Learn more</a>
+                  </div>
+                </div>
+
+                <div class="work-item">
+                  <div class="work-bg"></div>
+                  <div class="work-item-inner">
+                    <p class="work-item-subtitle">Service / 002</p>
+                    <p class="work-title">
+                      <span data-reveal="top">INFLUENCER</span>
+                      <span data-reveal="top2">MARKETING</span>
+                    </p>
+
+                    <a href="" class="work-item-linkk">Learn more</a>
+                  </div>
+                </div>
+
+                <div class="work-item">
+                  <div class="work-bg"></div>
+                  <div class="work-item-inner">
+                    <p class="work-item-subtitle">Service / 003</p>
+                    <p class="work-title">
+                      <span data-reveal="top">public</span>
+                      <span data-reveal="top2">relations</span>
+                    </p>
+
+                    <a href="" class="work-item-linkk">Learn more</a>
+                  </div>
+                </div>
+                
+                <div class="work-item">
+                  <div class="work-bg"></div>
+                  <div class="work-item-inner">
+                    <p class="work-item-subtitle">Service / 004</p>
+                    <p class="work-title">
+                      <span  data-reveal="top">social</span>
+                      <span  data-reveal="top3">media</span>
+                    </p>
+
+                    <a href="" class="work-item-linkk">Learn more</a>
+                  </div>
+                </div>
+
+                <div class="work-item">
+                  <div class="work-bg"></div>
+                  <div class="work-item-inner">
+                    <p class="work-item-subtitle">Service / 004</p>
+                    <p class="work-title" >
+                      <span data-reveal="top">event</span>
+                      <span data-reveal="top2">palnning </span>
+                      <span data-reveal="top3">production</span>
+                    </p>
+
+                    <a href="" class="work-item-linkk">Learn more</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section class="images-page-2">
+            <div class="image-page2">
+              <img src="img/image-page2.jpg" alt="">
+            </div>
+           
+          </section>
+
+          <section class="clients">
+            <div class="clients-number">
+              <span>(02)</span>
+            </div>
+
+            <div class="clients-img-second">
+              <img  src="img/case-img-second.jpg" alt="">
+            </div>
+
+
+            <div class="clients-img">
+              <img src="img/case-bg.jpg" alt="">
+            </div>
+            <div class="clients-cont">
+             <h4 class="clients-subtitle">clients</h4>
+
+             <h2 class="clients-title">Tell <br>your story</h2>
+
+             <p class="clients-desc">We create and execute innovative communication strategies that shape the digital narratives of today, delivering measurable outcomes and lasting impact for our clients across North America..</p>
+            </div>
+          </section>
+
+          <section class="brands">
+            <div class="container">
+              <div class="brands-list">
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">L’OREAL</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">ROYALMOUNT</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">DAVIDSTEA</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">Roots</p>
+                  </div>
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-4.png" alt="">
+                    </div>
+                  </div>
+                 
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">BATH AND BODY WORKS</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">CALL IT SPRING</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-6.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">MOON ORAL</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-7.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">ESSENCE BEAUTY</p>
+                  </div>
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-8png.png" alt="">
+                    </div>
+                  </div>
+                 
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">LINEN CHEST</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-9.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">KANEL SPICES</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-10.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">FAVUZZI</p>
+                  </div>
+
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-11.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="brands-item">
+                  <div class="brands-item_header">
+                    <span class="brands-item_header-selct"></span>
+
+                    <p class="brands-item_header-title">RUDSAK</p>
+                  </div>
+                  <div class="brands-img__inner">
+                    <div class="brands-img">
+                      <img src="img/brands/brands-12.png" alt="">
+                    </div>
+                  </div>
+                 
+                </div>
+
+                
+
+              </div>
+            </div>
+          </section>
+
+          <section class="founder">
+            <div class="container">
+              <div class="founder-inner">
+                <div class="founder-top">
+                  <div class="founder-top-img">
+                    <img src="img/brands/founder-top.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="founder-cont">
+                  <div class="founder-cont-img">
+                    <img src="img/brands/founder-left.jpg" alt="">
+                  </div>
+
+                  <div class="founder-cont-item">
+
+                    <div class="founder-cont-item-text">
+                      <p>“Sundae Creative is a trailblazer in influencer marketing, connecting brands with influential voices across social media to build impactful messages.”</p>
+                    </div>
+
+
+                    <div class="founder-cont-item-bottom">
+                      <div class="founder-card">
+                        <img src="img/brands/founder-card.jpg" alt="">
+                      </div>
+
+                      <div class="founder-cont-item-bottom-txt">
+                        <h4>Kristina Argento</h4>
+                        <span>Co-founder</span>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section class="work-second">
+            <div class="services-number">
+              <span>(04)</span>
+            </div>
+
+
+            <div class="work-second-img">
+              <img src="img/work-second-right.jpg" alt="">
+            </div>
+            <div class="work-second-cont">
+             <h4 class="work-second-subtitle">work</h4>
+
+             <h2 class="work-second-title">Where PR, <br>
+              Influencer Marketing <br>
+              and Digital Strategy <br>
+              Converge</h2>
+
+             <p class="work-second-desc">Our mission is to empower the brands we believe in with tailor-made approaches that ignite creativity and growth without limits.</p>
+
+             <a href="" class="about__btn btn">
+              <span class="btn-container work-second-btn">
+                <span class="btn-inner">
+                  <span class="btn-inactive">Discover all case studies</span>
+                  <span class="btn-active">Discover all case studies</span>
+                </span>
+  
+                <sapn class="btn-black"></sapn>
+                <sapn class="btn-bg"></sapn>
+              </span>
+            </a>
+            </div>
+          </section>
+
+          <section class="stacking">
+          
+            <div class="stacking-inner">
+              <div class="stacking-inner-list">
+
+                <div  class="stacking-item">
+
+                  <div class="stacking-item-header">
+                    <div class="stacking-img">
+                      <img src="img/stacking-1.png" alt="">
+                    </div>
+
+                    <p>01</p>
+                  </div>
+
+                  <div class="stacking-cont">
+                    <h4>Amazon Prime Video “The Boys” Activation  and VIP event</h4>
+
+                    <div class="stacking-cont-bottom">
+                      <div class="stacking-cont-bottom-text">EVENT PLANNING & PRODUCTION </div>
+
+                      <a href="" class="about__btn btn">
+                        <span class="btn-container stacking-container">
+                          <span class="btn-inner">
+                            <span class="btn-inactive">View full case study</span>
+                            <span class="btn-active">View full case study</span>
+                          </span>
+            
+                          <sapn class="btn-black"></sapn>
+                          <sapn class="btn-bg"></sapn>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div  class="stacking-item">
+
+                  <div class="stacking-item-header">
+                    <div class="stacking-img">
+                      <img src="img/stacking-2.png" alt="">
+                    </div>
+
+                    <p>02</p>
+                  </div>
+
+                  <div class="stacking-cont">
+                    <h4>stteve madden candian collectiolaunch: made to move</h4>
+
+                    <div class="stacking-cont-bottom">
+                      <div class="stacking-cont-bottom-text">INFLUENCER MARKETING </div>
+
+                      <a href="" class="about__btn btn">
+                        <span class="btn-container stacking-container">
+                          <span class="btn-inner">
+                            <span class="btn-inactive">View full case study</span>
+                            <span class="btn-active">View full case study</span>
+                          </span>
+            
+                          <sapn class="btn-black"></sapn>
+                          <sapn class="btn-bg"></sapn>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="stacking-item">
+
+                  <div class="stacking-item-header">
+                    <div class="stacking-img">
+                      <img src="img/stacking-3.png" alt="">
+                    </div>
+
+                    <p>03</p>
+                  </div>
+
+                  <div class="stacking-cont">
+                    <h4>dulcedo models: model search</h4>
+
+                    <div class="stacking-cont-bottom">
+                      <div class="stacking-cont-bottom-text">social media </div>
+
+                      <a href="" class="about__btn btn">
+                        <span class="btn-container stacking-container">
+                          <span class="btn-inner">
+                            <span class="btn-inactive">View full case study</span>
+                            <span class="btn-active">View full case study</span>
+                          </span>
+            
+                          <sapn class="btn-black"></sapn>
+                          <sapn class="btn-bg"></sapn>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="stacking-item">
+
+                  <div class="stacking-item-header">
+                    <div class="stacking-img">
+                      <img src="img/stacking-4.png" alt="">
+                    </div>
+
+                    <p>04</p>
+                  </div>
+
+                  <div class="stacking-cont">
+                    <h4>loreal luxe trend hacking</h4>
+
+                    <div class="stacking-cont-bottom">
+                      <div class="stacking-cont-bottom-text">INFLUENCER MARKETING </div>
+
+                      <a href="" class="about__btn btn">
+                        <span class="btn-container stacking-container">
+                          <span class="btn-inner">
+                            <span class="btn-inactive">View full case study</span>
+                            <span class="btn-active">View full case study</span>
+                          </span>
+            
+                          <sapn class="btn-black"></sapn>
+                          <sapn class="btn-bg"></sapn>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          
+          </section>
+
+
+        
+
+          </div>
+        </div>
+
+     
+
+
+
+    </main>
    
-   <link rel="stylesheet" href="style.css">
-   <title>Document</title>
-</head>
-<body>
-
-<nav>
-   <a href="#">Index</a>
-   <a href="#">Watch Showcase</a>
-</nav>
-
-<div class="nav-items">
-   <a href="#">Work</a>
-   <a href="#">About</a>
-   <a href="#">Contact</a>
-</div>
-
-<div class="whitespace w-1"></div>
-
-<div class="gallery">
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>01</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>02</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>03</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>04</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>05</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>06</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>07</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-
-   <div class="project">
-      <div class="index"> 
-         <div class="mask">
-            <h1>08</h1>
-         </div>
-      </div>
-      <div class="images"></div>
-   </div>
-   
- </div>
-
-<div class="whitespace w-2"></div>
 
 
-<div class="project-names">
-   <div class="indicator">
-      <div class="symbol"></div>
-   </div>
-   <div class="name active"><p>Atlas Studio</p></div>
-   <div class="name"><p>Nimbus</p></div>
-   <div class="name"><p>Solara</p></div>
-   <div class="name"><p>Quantum</p></div>
-   <div class="name"><p>Echo Labs</p></div>
-   <div class="name"><p>Vesper</p></div>
-   <div class="name"><p>Axon</p></div>
-   <div class="name"><p>Horizon</p></div>
-</div>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js" defer></script>
 
-
-<div class="preview-img">
-   <img src="assets/img1.jpg" alt="">
-</div>
-
-<div class="progress-bar"></div>
-
-<div class="footer"><p>Portfolio 2024</p></div>
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
-
-   <script src="index.js"></script>
-   
-</body>
+ 
+  </body>
 </html>

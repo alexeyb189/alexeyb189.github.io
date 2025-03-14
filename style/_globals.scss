@@ -1,0 +1,97 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  @include fluid-text(18, 16);
+  font-family: var(--font-second);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--light);
+  overflow-x: hidden;
+  background-color: var(--dark);
+  
+}
+::selection {
+  background-color: #828282;
+  color: #fff;
+}
+::placeholder {
+  color: #666;
+
+  
+}
+.wrapper{
+  overflow: hidden;
+}
+.content{
+  overflow: hidden;
+}
+
+.image-animation {
+  -webkit-clip-path: polygon(0 0,100% 0,100% 0,0 0);
+  clip-path: polygon(0 0,100% 0,100% 0,0 0)
+}
+
+
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--font-family-base);
+  
+  // text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 {
+  @include fluid-text(160, 43);
+}
+
+h2 {
+  @include fluid-text(56, 36);
+}
+
+h3 {
+  @include fluid-text(46, 26);
+}
+
+h4 {
+  @include fluid-text(24, 22);
+  line-height: 1;
+}
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

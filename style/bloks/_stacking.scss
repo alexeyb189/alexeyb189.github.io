@@ -1,0 +1,123 @@
+.stacking {
+   height: 100%;
+   background-color: var(--light);
+   padding-top: 100px;
+   color: var(--dark);
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 100px;
+   margin-top: -5px;
+}
+
+.spacer {
+   height: 100vh;
+ }
+
+.stacking-inner {
+   display: flex;
+   // background-color: green;
+}
+.stacking-inner-list {
+  
+   width: 100%;
+}
+.stacking-item {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   position: relative;
+   z-index: 5;
+   border-top: 1px solid var(--dark);
+   padding-block: 30px;
+   cursor: pointer;
+   position: relative;
+   background-color: var(--light);
+
+   @include hover{
+     
+         .btn-bg{
+            transform: translateY(0%) rotate(0deg);
+            transition-delay: 0s !important;
+         }
+         .btn-inactive{
+         transform: translateY(100%);
+         transition-delay: 0s;
+         opacity: .25;
+         }
+         .btn-active{
+            transition: transform .4s cubic-bezier(0.25, 1, 0.5, 1);
+            transform: translateY(0%) rotate(0deg);
+            transition-delay: .2s !important;
+         }
+         .stacking-img img{
+            transform: scale(1.1);
+         }
+       
+   }
+}
+
+.stacking-item:nth-child(1){
+z-index: 2;
+}
+.stacking-item:nth-child(2){
+   z-index: 3;
+   
+}
+.stacking-item:nth-child(3){
+   z-index: 4;
+}
+.stacking-item:nth-child(4){
+   z-index: 5;
+}
+.stacking-item:nth-child(5){
+   z-index: 6;
+}
+.stacking-item-header{
+   grid-column: 2/5;
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+}
+.stacking-img{
+   // aspect-ratio: 217/340;
+   width: 150px;
+   
+}
+.stacking-img img{
+   transition: all .4s ease-in-out;
+}
+.stacking-item-header p{
+   font-family: var(--font-other);
+   font-size: 20px;
+   color: var(--red);
+}
+.stacking-cont{
+   grid-column: 5/12;
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.stacking-cont-bottom{
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+.stacking-container{
+   width: 180px;
+   white-space: nowrap;
+}
+.stacking-cont h4{
+   font-family: var(--font-base);
+   font-size: 44px;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   font-weight: 200;
+   max-width: 500px;
+}
+.stacking-cont-bottom-text{
+   border: 1px solid var(--dark);
+   font-size: 12px;
+   padding-inline: 10px;
+   font-weight: 300;
+   text-transform: uppercase;
+}
