@@ -1,0 +1,33 @@
+.menu-open-btn{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 32px;
+   aspect-ratio: 1;
+   position: relative;
+   margin-right: 80px;
+   cursor: pointer;
+}
+.menu-open-btn span{
+   position: absolute;
+   width: 18px;
+   height: 1px;
+   background-color: var(--light);
+   transition: all .3s ease-in-out;
+  
+}
+.menu-open-btn span:nth-child(1){
+   transform: translateY(-3px);
+}
+.menu-open-btn span:nth-child(2){
+   transform: translateY(3px);
+}
+
+.header.open .menu-open-btn span:nth-child(1){
+   transform: translateY(0) rotate(45deg);
+}
+.header.open .menu-open-btn span:nth-child(2){
+   transform: translateY(0) rotate(-45deg);
+}
+
+

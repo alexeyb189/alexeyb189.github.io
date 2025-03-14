@@ -1,0 +1,15 @@
+.search-menu{
+   display: flex;
+   position: absolute;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100vw;
+   height: 100vh;
+   background-color: #fff;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+ }
+ .header.open-2 .search-menu {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

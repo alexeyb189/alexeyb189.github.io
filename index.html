@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>eyewear</title>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+  <script src="
+https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+"></script>
+
+<!-- https://garagemca.org/ -->
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header__inner">
+
+        <div class="nav">
+    
+          <a href="#" class="header__logo">
+            <img src="img/logo1.svg" alt="">eyewear
+          </a>
+
+          <div class="nav-menu">
+            <div class="nav-menu-button --open-menu">
+              <div class="nav-menu-button-text"><span>MENU</span></div>
+    
+              <div class="nav-menu-button-circle"></div>
+            </div>
+          </div>
+
+          <a href="" class="header__link">
+            <span>Let's Talk</span>
+          </a>
+        </div>
+    
+        <div class="menu">
+          
+          <div class="menu__wrapper">
+            <div class="menu-top">
+             
+              <span>menu</span>
+              <div class="devider"></div>
+            </div>
+
+            <ul class="menu__list">
+
+              <li><a href="" class="menu__list-item">home</a></li>
+              <li><a href="" class="menu__list-item">shop</a></li>
+              <li><a href="" class="menu__list-item">login</a></li>
+              <li><a href="" class="menu__list-item">register</a></li>
+              <li><a href="" class="menu__list-item">about</a></li>
+              <li><a href="" class="menu__list-item">press</a></li>
+              <li><a href="" class="menu__list-item">privacy policy</a></li>
+              <li><a href="" class="menu__list-item">terms of service</a></li>
+              <li><a href="" class="menu__list-item">returns/exchanges</a></li>
+              <li><a href="" class="menu__list-item">size guide</a></li>
+              <li><a href="" class="menu__list-item">order/shipping</a></li>
+              <li><a href="" class="menu__list-item">contact us</a></li>
+
+            </ul>
+          </div>
+   
+                 
+        </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+	<div class="wrapper">
+		<div class="content">
+      
+
+      <section class="hero">
+        <div class="hero__video">
+          <video src="img/video.webm" autoplay loop muted></video>
+        </div>
+      </section>
+  
+      <section class="product">
+        <div class="container">
+          <div class="product__wrapper">
+            <div class="product-top">
+  
+              <div class="filter">
+                <label class="filter__label" for="filter">style</label>
+  
+                <select id="filter" class="filter__select">
+                  <option value="all">ALL</option>
+                  <option value="all">anima-x1</option>
+                  <option value="all">anima-x2</option>
+                  <option value="all">anima-x3</option>
+                </select>
+              </div>
+
+              <a href="#" class="link"> SHOP THE COLLECTION </a>
+             
+            </div>
+
+
+            <div class="swiper poduct-list">
+              <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x1">
+                  <div class="product-image">
+                    <img src="img/prod/X1-001-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X1-001-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X1 001</p>
+                    <p class="gray">$245.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x1">
+                  <div class="product-image">
+                    <img src="img/prod/X1-002-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X1-002-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X1 002</p>
+                    <p class="gray">$245.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x1">
+                  <div class="product-image">
+                    <img src="img/prod/X1-003-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X1-003-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X1 003</p>
+                    <p class="gray">$245.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x1">
+                  <div class="product-image">
+                    <img src="img/prod/X1-004-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X1-004-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X1 004</p>
+                    <p class="gray">$45.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x2">
+                  <div class="product-image">
+                    <img src="img/prod/X2-002-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X2-001-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X2 001</p>
+                    <p class="gray">$245.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x2">
+                  <div class="product-image">
+                    <img src="img/prod/X2-002-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X2-002-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X2 002</p>
+                    <p class="gray">$95.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x2">
+                  <div class="product-image">
+                    <img src="img/prod/X2-003-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X2-003-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X2 003</p>
+                    <p class="gray">$55.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x2">
+                  <div class="product-image">
+                    <img src="img/prod/X2-004-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X2-004-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X2 004</p>
+                    <p class="gray">$45.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x3">
+                  <div class="product-image">
+                    <img src="img/prod/X3-001-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X3-001-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X3 001</p>
+                    <p class="gray">$245.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x3">
+                  <div class="product-image">
+                    <img src="img/prod/X3-002-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X3-002-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X3 002</p>
+                    <p class="gray">$95.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x3">
+                  <div class="product-image">
+                    <img src="img/prod/X3-003-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/X3-003-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X3 003</p>
+                    <p class="gray">$55.00</p>
+                  </div>
+                </a>
+
+                <a href="#" class="swiper-slide product-item" data-collection="anima-x3">
+                  <div class="product-image">
+                    <img src="img/prod/Y1-001-2.jpg" alt="" class="product__hover">
+                    <img src="img/prod/Y1-001-1.jpg" alt="" class="product__img">
+                  </div>
+
+                  <div class="product__info">
+                    <p>ANIMA X3 004</p>
+                    <p class="gray">$45.00</p>
+                  </div>
+                </a>
+
+               
+
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+      
+      <div class="sticky ">
+        
+          <section class="card pinned">
+           <div class="card-content">
+            
+            <div class="card-content-text">
+              <p class="card-content-desc">WHIP ON THESE FASHIONABLE FRAMES DETAILED WITH AERODYNAMICALLY ENGINEERED TITANIUM BROWS AND LIGHTWEIGHT TITANIUM LIBRARY TEMPLES WITH CUSTOM RUBBER TIPS TO BE STYLISHLY COMFORTABLE ANYWHERE, ANYTIME.
+
+              </p>
+              <div class="card-content-title">
+                <h3>ANIMUS Y2</h3>
+                <h3>001 </h3>
+              </div>
+
+              <div class="card-content-bottom">
+                <div class="card-content-img">
+                  <img width="102" src="img/mini-1.webp" alt="">
+                  <img width="102" src="img/mini-2.webp" alt="">
+                </div>
+                <a href="" class="link"> QUICK ADD </a>
+              </div>
+            </div>
+           </div>
+
+           <div class="card__image">
+            <img src="img/card-1.jpg" alt="">
+           </div>
+
+          </section>
+        
+          <section class="card pinned">
+            <div class="card-content card-content-gray">
+              <div class="card-content-text">
+                <p class="card-content-desc">WHIP ON THESE FASHIONABLE FRAMES DETAILED WITH AERODYNAMICALLY ENGINEERED TITANIUM BROWS AND LIGHTWEIGHT TITANIUM LIBRARY TEMPLES WITH CUSTOM RUBBER TIPS TO BE STYLISHLY COMFORTABLE ANYWHERE, ANYTIME.
+                </p>
+                <div class="card-content-title">
+                  <h3>ANIMUS Y2</h3>
+                  <h3>004 </h3>
+                </div>
+  
+              </div>
+              <a href="#" class="link link__card">QUICK ADD</a>
+            </div>
+ 
+            <div class="card__image">
+             <img  src="img/card-2.jpg" alt="">
+            </div>
+          </section>
+        
+        
+          <section class="card scroll">
+            <div class="card-content card-content-gray">
+              <div class="card-content-text">
+                <p class="card-content-desc">WHIP ON THESE FASHIONABLE FRAMES DETAILED WITH AERODYNAMICALLY ENGINEERED TITANIUM BROWS AND LIGHTWEIGHT TITANIUM LIBRARY TEMPLES WITH CUSTOM RUBBER TIPS TO BE STYLISHLY COMFORTABLE ANYWHERE, ANYTIME.
+                </p>
+                <div class="card-content-title">
+                  <h3>ANIMUS Y2</h3>
+                  <h3>003 </h3>
+                </div>
+  
+              </div>
+
+              <img src="img/mini-3.jpg" alt="" class="card-img">
+            </div>
+ 
+            <div class="card__image">
+             <img  src="img/card-3.jpg" alt="">
+            </div>
+          </section>
+        
+          <section class="sticky-bottom">
+            <!-- <h1>Footer</h1> -->
+          </section>
+      </div>
+
+      <section class="promotions ">
+        <img data-speed=".1" src="img/promotions.jpg" alt="">
+      </section>
+
+    
+			<footer class="footer">
+        <div class="container">
+          <div class="footer__info">
+
+            <div class="footer__list">
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>X1</p>
+                  <span>4</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>X2</p>
+                  <span>4</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>X3</p>
+                  <span>4</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>Y1</p>
+                  <span>3</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>Y2</p>
+                  <span>4</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+              <div class="footer__list-item">
+                <div class="footer__list-model">
+                  <p>Y3</p>
+                  <span>4</span>
+                </div>
+
+                <div class="footer__list-circle">
+                  <span class="orange"></span>
+                  <span class="red"></span>
+                  <span class="blue"></span>
+                  <span class="brown"></span>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="footer__content">
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA X ANIMUS 2021</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax104.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA X ANIMUS 2022</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax104.jpg" alt="">
+                  </div>
+                 
+                </div>
+              </div>
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA X ANIMUS 2020</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+                 
+                </div>
+              </div>
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA Y ANIMUS 2020</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax104.jpg" alt="">
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA Y ANIMUS 2021</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+                 
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax104.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer__content-item">
+                <p class="footer__content-name">ANIMA Y ANIMUS 2023</p>
+                <div class="footer__content-images">
+
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax101.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax102.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax103.jpg" alt="">
+                  </div>
+                  <div class="footer__content-img">
+                    <img src="img/footer/ax104.jpg" alt="">
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="footer_bottom">
+
+            <div class="footer__nav">
+
+              <div class="footer__nav-item">
+                <p class="footer__nav-title">SHOP</p>
+
+                <div class="footer__nav-list">
+                  <li><a href="#">all</a></li>
+                  <li><a href="#">Collection</a></li>
+                </div>
+              </div>
+
+              <div class="footer__nav-item">
+                <p class="footer__nav-title">Assistance</p>
+
+                <div class="footer__nav-list">
+                  <li><a href="#">ORDERS & SHIPPING</a></li>
+                  <li><a href="#">RETURNS & EXCHANGES</a></li>
+                  <li><a href="#">SIZE GUIDE</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                </div>
+              </div>
+
+              <div class="footer__nav-item">
+                <p class="footer__nav-title">Legal</p>
+
+                <div class="footer__nav-list">
+                  <li><a href="#">TERMS OF SERVICE</a></li>
+                  <li><a href="#">PRIVACY</a></li>
+                 
+                </div>
+              </div>
+
+              <div class="footer__nav-item">
+                <p class="footer__nav-title">XB</p>
+
+                <div class="footer__nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">News</a></li>
+                 
+                </div>
+              </div>
+
+              <div class="footer__nav-item">
+                <p class="footer__nav-title">Social</p>
+
+                <div class="footer__nav-list">
+                  <li><a href="#">IG</a></li>
+                 
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="newsletter">
+
+            </div>
+
+          </div>
+        </div>
+
+      </footer>
+
+		</div>
+	</div>
+
+  
+
+  
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
