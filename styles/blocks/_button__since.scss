@@ -1,0 +1,31 @@
+@use "../helpers" as *;
+
+.button__since{
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 23px;
+   border: 1px solid var(--dark-alt);
+   padding: rem(25) rem(50) rem(18) rem(88);
+   line-height: 1;
+   font-size: rem(22);
+   border-radius: 99px;
+   position: relative;
+   max-width: 250px;
+   white-space: nowrap;
+
+   ::before {
+     position: absolute;
+     content: "";
+     width: 35px;
+     height: 35px;
+     left: 30px;
+     top: 15px;
+     background-image: url(/icons/star.svg);
+   }
+
+   span {
+     line-height: 0.8;
+   }
+}
