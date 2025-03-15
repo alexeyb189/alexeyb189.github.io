@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.button{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: rem(120);
+   width: rem(120);
+   background-image: url(/icons/Polygon-yellow.svg);
+   color: var(--dark);
+   margin-bottom: 20px;
+   margin-right: 20px;
+}

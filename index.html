@@ -1,151 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles/main.css">
 
-
-
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.8/dist/lenis.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+   <script src="scripts/main.js" defer></script>
 </head>
-<body class="body">
-  
-    <main class="app">
-      <section class="intro">
+<body>
 
-            <div class="intro-one">
-              <div class="intro-card">
+   <header class="header">
 
-                <div class="intro-card-inner">
-                  <div class="intro-card-caption">
-                    <span>We Are Digital Makers</span>
-                    <span>alexeybmusic@gmail.com</span>
-                  </div>
-                  <div class="intro-card-title">
-                    <h2>makers(s)</h2>
-                    <h3>italy</h3>
-                  </div>
-                  <div class="intro-card-desc">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
-                  <div class="intro-card-info">
-                    <span>Scroll Down</span>
-                  </div>
-                </div>
+      <div class="container">
+         <div class="header__inner">
 
-                
-              </div>
+            <a href="/" class="header__logo">
+              <img src="images/logo.svg" alt="" class="header__logo-link">
+            </a>
+   
+            <ul class="header__menu-list hidden-tablet ">
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Home</a>
+               </li>
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">About</a>
+               </li>
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Rooms</a>
+               </li>
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Restaurant</a>
+               </li>
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Conference hall</a>
+               </li>
+               <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Contacts</a>
+               </li>
+            </ul>
+   
+            <a href="/" class="header__menu-link header__menu-link--phone hidden-tablet">+38 032 297 50 20</a>
+
+            <button
+          class="header__burger-button burger-button visible-tablet"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+         </div>
+      </div>
+     
+   </header>
+
+   <section class="hero">
+      <div class="container">
+         <div class="hero__wrapper">
+
+            <div class="hero-top">
+
+               <div class="hero-top__left">
+                  <h1 class="hero-top__left-title">Bank<span>Hotel</span></h1>
+
+                  <p class="hero-top__left-desc">rooms // restaurant // congress hall // wine bar</p>
+               </div>
+
+               <div class="devider visible-mobile"></div>
+
+               <div class="hero-top__right">
+                  <div class="hero-top__right-top">
+                     <div class="hero-top__right-box hidden-tablet">
+                        <span>Since 1973</span>
+                     </div>
+
+                     <button class="scroll-btn hidden-mobile ">
+                       <img src="icons/arrow-bot.svg" alt="">
+                     </button>
+                  </div>
+                  <div class="hero-top__right-bottom">
+                     <p class="hero-top__right-desc">The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.</p>
+                  </div>
+               </div>
+
             </div>
 
-            <!-- <div class="intro-two">
-              <div class="intro-card">
+            <div class="hero__bottom">
+               <div class="hero__bottom-form">
+                  <div class="form hidden-mobile">
+                     <div class="form-item">
+                        Check in
+                        <img width="8" src="icons/arrow-bot.svg" alt="">
 
-                <div class="intro-card-inner">
-                  <div class="intro-card-caption">
-                    <span>we are digital makers</span>
-                  </div>
-                  <div class="intro-card-title">
-                    <h3>web design</h3>
-                    <h3>Motion design</h3>
-                    <h3>ui/ux</h3>
-                    <h3>branding</h3>
-                  </div>
-                  <div class="intro-card-desc">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minima cum possimus animi iste magnam nam eos quisquam delectus ratione exercitationem blanditiis, aliquam, recusandae, illo aliquid iusto. Unde, excepturi pariatur.</p>
-                  </div>
-                <div class="intro-card-info">
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta possimus quia laudantium quos similique culpa saepe natus tenetur veniam?</span>
-                </div>
-                </div>
-              </div>
-            </div> -->
+                     </div>
 
-            <div class="intro-media">
-              <img src="img/1.jpg" alt="" class="intro-media-image">
+                     <div class="form-item">
+                        Check out
+                        <img width="8" src="icons/arrow-bot.svg" alt="">
+
+                     </div>
+
+                     <button class="form-button">
+                        book room
+                     </button>
+                  </div>
+
+                  <a href="" class="button hero__bottom-button visible-mobile">Book room</a>
+               </div>
+
+               <div class="hero__bottom-contact">
+                  <div class="hero__bottom-contact--left hidden-tablet">
+
+                     <a href="/" class="link">+38 032 297 50 20</a>
+                     <span>
+                        8 Lystopadovoho Chynu,Lviv
+                     </span>
+
+                  </div>
+
+                  <p class="hero__bottom-contact--text">Art & Congress <br> hall</p>
+               </div>
             </div>
-      </section>
 
-      <section class="gallery">
-        <div class="gallery-wrapper">
+         </div>
+      </div>
+   </section>
 
-          <div class="gallery-media">
-            <img src="img/2.jpg" alt="" class="gallery-media-image">
-          </div>.
+   <section class="about">
+      <img src="icons/about-line.svg" alt="" class="about__bg">
+      <div class="container">
+         <div class="about__wrapper">
+         
+           <h2 class="about__title">
+            <span>About</span><br>US
+           </h2>
 
-          <div class="gallery-media">
-            <img src="img/3.jpg" alt="" class="gallery-media-image">
-          </div>
+           <img src="images/about-left.jpg" alt="" class="about-img__left">
 
-          <div class="gallery-media">
-            <img src="img/4.jpg" alt="" class="gallery-media-image">
-          </div>
+           <div class="about__desc">
+            <div class="about__desc-top">
+               <h4 class="about__desc-title">High quality</h4>
+               <p class="about__desc-text">The five-star Bank Hotel was reopened to visitors in 2016. The building was renovated and modernized to meet the expectations of the most demanding guests. We offer luxurious rooms, numerous facilities, and exceptional service.</p>
+            </div>
 
-          <div class="gallery-media">
-            <img src="img/5.jpg" alt="" class="gallery-media-image">
-          </div>
+            
 
-          <div class="gallery-media">
-            <img src="img/6.jpg" alt="" class="gallery-media-image">
-          </div>
+            <a href="/" class="about__button hidden-tablet ">
+               <span>Rooms <br> and <br> apartments</span>
+               <img width="14" src="icons/arrow-bot.svg" alt="">
+              </a>
 
-        </div>
+           </div>
 
-        <div class="gallery-text">
-
-          <div class="gallery-text-items">
-            <h2>Digital narratives</h2>
-          </div>
-
-          <div class="gallery-text-items">
-            <h2>This is our take</h2>
-          </div>
-
-          <div class="gallery-text-items">
-            <h2>Custom scroll easing</h2>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="connect">
-        <div class="connect-wrapper">
-          <div class="connect-caption">
-            <span>In the realm of</span>
-            <span>interconnected</span>
-            <span>we weave</span>
-            <span>digital threads</span>
-            <span>bridging ideas,</span>
-            <span>seamlessly</span>
-          </div>
-          <div class="connect-title">
-            <span>Connectivity</span>
-            <span>sparks innovation</span>
-            <span>forging meanigful</span>
-            <span>in the creative communities,</span>
-            <span>boundaries</span>
-          </div>
-        </div>
-          <div class="connect-media image-front">
-            <img src="img/CURATR-1.png" alt="">
-          </div>
-          <div class="connect-media image-back">
-            <img src="img/CURATR-2.jpg" alt="">
-          </div>
-      </section>
-    </main>
+           <img src="images/about-right.jpg" alt="" class="about-img__right hidden-mobile">
 
 
+         </div>
+      </div>
+   </section>
 
-
- 
   
-  <script src="https://unpkg.com/lenis@1.1.8/dist/lenis.min.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
 
-  <script src="index.js" defer></script>
 </body>
 </html>
